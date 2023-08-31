@@ -1,0 +1,47 @@
+<mixer>
+    <!-- These are the initial mixer settings -->
+  <ctl name="Headphone Switch" value="1" />
+
+  <path name="media-speaker">
+      <ctl name="DAC volume" value="160 160" />
+      <ctl name="Headphone Switch" value="1" />
+      <ctl name="HpSpeaker Switch" value="1" />
+  </path>
+
+  <path name="media-headphones">
+      <ctl name="DAC volume" value="160 160" />
+      <ctl name="Headphone Switch" value="1" />
+      <ctl name="HpSpeaker Switch" value="0" />
+  </path>
+
+  <path name="media-single-speaker">
+  	<ctl name="DAC volume" value="159 159" />
+      <ctl name="Headphone Switch" value="1" />
+      <ctl name="HpSpeaker Switch" value="1" />
+  </path>
+
+  <!-- capture -->
+  <path name="media-main-mic">
+      <ctl name="ADCL Input MIC1 Boost Switch" value="1" />
+  </path>
+
+  <path name="media-headset-mic">
+      <ctl name="ADC Swap" value="On" />
+      <ctl name="ADCR Input MIC2 Boost Switch" value="1" />
+  </path>
+
+  <path name="out-reset">
+      <ctl name="HpSpeaker Switch" value="0" />
+      <ctl name="Headphone Switch" value="0" />
+  </path>
+
+  <path name="in-reset">
+      <ctl name="ADC Swap" value="Off" />
+      <ctl name="ADCL Input MIC1 Boost Switch" value="0" />
+      <ctl name="ADCR Input MIC2 Boost Switch" value="0" />
+  </path>
+
+  <path name="null">
+  </path>
+
+</mixer>
